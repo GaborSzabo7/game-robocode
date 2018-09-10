@@ -3,7 +3,7 @@ package gaszabo.robocode.robots;
 import robocode.Robot;
 import robocode.ScannedRobotEvent;
 
-public class SimpleRobot extends Robot {
+public class PowerRobot extends Robot {
 
 	@Override
 	public void run() {
@@ -13,8 +13,8 @@ public class SimpleRobot extends Robot {
 		}
 	}
 
-	public void onScannedRobot(ScannedRobotEvent e) {
-		fire(1);
+	public void onScannedRobot(ScannedRobotEvent scannedRobotEvent) {
+		fire(10);
 	}
-
+	
 }
